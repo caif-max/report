@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>代理商申请提醒</title>
+    <style type="text/css">
+        .main-box {
+            padding: 10px;
+            font-size:14px;
+        }
+        .col-red {
+            color: red;
+        }
+        .indent-2 {
+            text-indent:2em
+        }
+        .table-box {
+            margin-top: 20px;
+            min-width: 375px;
+        }
+        table {
+            width: 350px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        table thead {
+            background-color: #009cff;
+            color: #fff;
+        }
+        table thead th,table tbody td {
+            padding: 5px 0px;
+        }
+        table tbody tr td {
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<div class="main-box">
+    <div class="table-box">
+        <p>代理商名称：{{.Name}}</p>
+        <p>申请人：{{.RegisterManName}}</p>
+        <p>申请人电话：{{.RegisterManPhone}}</p>
+        <p>区域：{{.Area}}</p>
+        <p>公司位置：{{.Location}}</p>
+        <p>概况：{{.Situation}}</p>
+    </div>
+</div>
+<script type="text/javascript">
+</script>
+</body>
+</html>
